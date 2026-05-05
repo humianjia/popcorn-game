@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="bucketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c1121f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="popcornGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="popcornGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fcd34d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M14 24 L16 42 L34 42 L36 24 Z" fill="url(#bucketGrad)"/>
+  <path d="M15 26 L35 26" stroke="#fff8e7" stroke-width="2.5"/>
+  <path d="M14.5 32 L35.5 32" stroke="#fff8e7" stroke-width="2.5"/>
+  <path d="M15 38 L35 38" stroke="#fff8e7" stroke-width="2.5"/>
+  <ellipse cx="25" cy="20" rx="11" ry="7" fill="url(#popcornGrad)"/>
+  <ellipse cx="19" cy="16" rx="5" ry="4" fill="url(#popcornGrad2)"/>
+  <ellipse cx="31" cy="16" rx="5" ry="4" fill="url(#popcornGrad)"/>
+  <ellipse cx="25" cy="14" rx="5" ry="4" fill="url(#popcornGrad2)"/>
+  <ellipse cx="15" cy="20" rx="3" ry="2.5" fill="url(#popcornGrad)"/>
+  <ellipse cx="35" cy="20" rx="3" ry="2.5" fill="url(#popcornGrad2)"/>
+</svg>
