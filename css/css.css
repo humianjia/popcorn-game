@@ -196,6 +196,11 @@ a {
     min-width: 0;
 }
 
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
 .game-section {
     background: #fff;
     border-radius: 12px;
