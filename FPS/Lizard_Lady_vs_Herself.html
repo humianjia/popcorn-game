@@ -196,6 +196,8 @@
             shuffledGames.forEach((game) => {
                 const card = document.createElement('div');
                 card.className = 'game-card';
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'game-card-img';
                 const img = document.createElement('img');
                 const imgPath = game.imageUrl.startsWith('http') ? game.imageUrl : '../' + game.imageUrl;
                 img.src = imgPath;
@@ -204,7 +206,8 @@
                 const title = document.createElement('div');
                 title.className = 'game-card-title';
                 title.textContent = game.name;
-                card.appendChild(img);
+                imgContainer.appendChild(img);
+                card.appendChild(imgContainer);
                 card.appendChild(title);
                                 card.addEventListener('click', function() {
                     if (game.link) {

@@ -201,10 +201,13 @@
                 img.src = imgPath;
                 img.alt = game.name;
                 img.onerror = function() { this.src = '../img/icon/popcornGame.jpg'; };
-                const title = document.createElement('div');
-                title.className = 'game-card-title';
+                const imgContainer = document.createElement("div");
+                imgContainer.className = "game-card-img";
+                const title = document.createElement("div");
+                title.className = "game-card-title";
                 title.textContent = game.name;
-                card.appendChild(img);
+                imgContainer.appendChild(img);
+                card.appendChild(imgContainer);
                 card.appendChild(title);
                                 card.addEventListener('click', function() {
                     if (game.link) {
