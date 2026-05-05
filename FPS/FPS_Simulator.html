@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F52E7VZMM8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,100 +12,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FPS Simulator - Play Free Online | popcorngame.online</title>
-    <meta name="description" content="FPS Simulator is a first-person shooter training simulator. Players practice their shooting skills in various training scenarios. The game features realistic weapon mechanics, target practice, and skill progression systems. Play FPS Simulator for free on popcorngame.online - Fast, browser-based multiplayer FPS games. No download required!">
-    <meta name="keywords" content="FPS Simulator, simulator, training, aim, popcorn game, popcorn game game, popcorn game FPS, popcorn game shooter">
+    <meta name="description" content="Play FPS Simulator for free on popcorngame.online. Experience exciting browser-based games with no download required.">
+    <meta name="keywords" content="FPS, Simulator, free games, online games, browser games, popcorn game">
     <meta name="robots" content="index, follow">
     <meta name="author" content="popcorngame.online">
-    <link rel="canonical" href="https://popcorngame.space/">
+    <link rel="canonical" href="https://popcorngame.online/FPS/FPS_Simulator.html">
     <meta property="og:title" content="FPS Simulator - Play Free Online | popcorngame.online">
-    <meta property="og:description" content="FPS Simulator is a first-person shooter training simulator. Players practice their shooting skills in various training scenarios. The game features realistic weapon mechanics, target practice, and skill progression systems. Play FPS Simulator for free on popcorngame.online!">
+    <meta property="og:description" content="Play FPS Simulator for free on popcorngame.online.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://popcorngame.space/">
+    <meta property="og:url" content="https://popcorngame.online/FPS/FPS_Simulator.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FPS Simulator - Play Free Online | popcorngame.online">
-    <meta name="twitter:description" content="FPS Simulator is a first-person shooter training simulator. Players practice their shooting skills in various training scenarios. The game features realistic weapon mechanics, target practice, and skill progression systems.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2050%2050%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22grad1%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20style%3D%22stop-color%3A%23ff6b35%3Bstop-opacity%3A1%22%20%2F%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20style%3D%22stop-color%3A%23f7c59f%3Bstop-opacity%3A1%22%20%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cpolygon%20points%3D%2225%2C5%2045%2C40%205%2C40%22%20fill%3D%22none%22%20stroke%3D%22url(%23grad1)%22%20stroke-width%3D%223%22%2F%3E%0A%20%20%3Cline%20x1%3D%2225%22%20y1%3D%2215%22%20x2%3D%2225%22%20y2%3D%2230%22%20stroke%3D%22%23ff6b35%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%3Cline%20x1%3D%2220%22%20y1%3D%2235%22%20x2%3D%2230%22%20y2%3D%2235%22%20stroke%3D%22%23ff6b35%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E">
+    <meta name="twitter:description" content="Play FPS Simulator for free on popcorngame.online.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/css.css">
 </head>
 <body>
-    <div class="particles" id="particles"></div>
-    <div class="cursor-glow" id="cursorGlow"></div>
     <header class="header">
-        <a href="../index.html" class="logo">
-            <svg class="logo-icon" viewBox="0 0 50 50" width="45" height="45">
+        <div class="header-logo">
+            <svg viewBox="0 0 50 50" width="38" height="38">
                 <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#f7c59f;stop-opacity:1" />
+                    <linearGradient id="popcornGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="bucketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#c1121f;stop-opacity:1" />
                     </linearGradient>
                 </defs>
-                <polygon points="25,5 45,40 5,40" fill="none" stroke="url(#grad1)" stroke-width="3"/>
-                <line x1="25" y1="15" x2="25" y2="30" stroke="#ff6b35" stroke-width="2"/>
-                <line x1="20" y1="35" x2="30" y2="35" stroke="#ff6b35" stroke-width="2"/>
+                <path d="M16 26 L18 40 L32 40 L34 26 Z" fill="url(#bucketGrad)"/>
+                <ellipse cx="25" cy="22" rx="12" ry="8" fill="url(#popcornGrad)"/>
+                <ellipse cx="20" cy="18" rx="4" ry="3" fill="url(#popcornGrad)"/>
+                <ellipse cx="30" cy="18" rx="4" ry="3" fill="url(#popcornGrad)"/>
+                <ellipse cx="25" cy="16" rx="4" ry="3" fill="url(#popcornGrad)"/>
             </svg>
-            <span class="logo-text">Front<span class="logo-io">Wars</span></span>
-        </a>
-        <nav class="nav-categories">
-            <a href="../categories.html?category=action" class="nav-item">Action</a>
-            <a href="../categories.html?category=battle-royale" class="nav-item">Battle</a>
-            <a href="../categories.html?category=fps" class="nav-item">Shooter</a>
-            <a href="../categories.html?category=multiplayer" class="nav-item">Multiplayer</a>
-            <a href="../categories.html?category=sniper" class="nav-item">Sniper</a>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search games...">
-            <i class="fas fa-search"></i>
+            <span class="header-logo-text">Popcorn <span>Game</span></span>
         </div>
+
+        <div class="header-search">
+            <div class="header-search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search games...">
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <a href="../categories.html?category=action">Action</a>
+            <a href="../categories.html?category=battle-royale">Battle</a>
+            <a href="../categories.html?category=fps">Shooter</a>
+            <a href="../categories.html?category=multiplayer">Multiplayer</a>
+            <a href="../categories.html?category=sniper">Sniper</a>
+        </nav>
     </header>
-    <div class="main-container">
-        <main class="main-content">
-            <div class="game-showcase">
-                <div class="game-frame">
-                    <iframe id="game-iframe" src="https://html5.gamedistribution.com/2952cdc03d9742febf95e22cb6e5756b/?gd_sdk_referrer_url=https%3A%2F%2Fwww.onlinegames.io%2Fcat-runner%2F" allowfullscreen></iframe>
+
+    <div class="main-wrapper">
+        <aside class="left-sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Categories</div>
+                <a href="../categories.html?category=action" class="sidebar-nav-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Action</span>
+                </a>
+                <a href="../categories.html?category=battle-royale" class="sidebar-nav-item">
+                    <i class="fas fa-crosshairs"></i>
+                    <span>Battle</span>
+                </a>
+                <a href="../categories.html?category=fps" class="sidebar-nav-item">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Shooter</span>
+                </a>
+                <a href="../categories.html?category=multiplayer" class="sidebar-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Multiplayer</span>
+                </a>
+                <a href="../categories.html?category=sniper" class="sidebar-nav-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Sniper</span>
+                </a>
+            </div>
+
+            <div class="ad-container vertical"></div>
+        </aside>
+
+        <div class="center-content">
+            <div class="game-section">
+                <div class="game-frame-wrapper">
+                    <iframe id="game-iframe" class="game-frame" src="https://html5.gamedistribution.com/f29a502f781449489e9771112f61d907/?gd_sdk_referrer_url=https%3A%2F%2Fwww.onlinegames.io%2Fcat-runner%2F" allowfullscreen></iframe>
+                    <div id="game-overlay" class="game-overlay" style="display:none;"></div>
                 </div>
                 <div class="game-controls">
-                    <div class="game-title-section">
-                        <img src="../img/icon/FPS/FPSSimulator.jpeg" id="game-icon" class="game-icon" alt="FPS Simulator">
+                    <div class="game-info-left">
+                        <img src="../img/icon/FPS/FPS_Simulator.jpeg" id="game-icon" class="game-icon" alt="FPS Simulator">
                         <span class="game-title" id="current-game-title">FPS Simulator</span>
                     </div>
                     <div class="game-actions">
-                        <i class="fas fa-expand" onclick="toggleFullscreen()"></i>
+                        <button class="game-action-btn" onclick="toggleFullscreen()"><i class="fas fa-expand"></i></button>
+                        <button class="game-action-btn"><i class="fas fa-heart"></i></button>
+                        <button class="game-action-btn"><i class="fas fa-share"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="related-games">
-                <h3 class="section-title">Popular Shooter Games</h3>
+
+            <div class="ad-banner">
+                <div class="ad-container horizontal"></div>
+            </div>
+
+            <div class="game-list-section">
+                <div class="section-header">
+                    <h3 class="section-title"><i class="fas fa-fire"></i> Popular Games</h3>
+                    <a href="../categories.html" class="section-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
                 <div class="games-grid" id="related-games-container"></div>
             </div>
-            <div class="content-section">
+
+            <div class="info-section">
                 <div class="game-info">
-                    <div class="info-header">Welcome to popcorngame.online - A fast, browser-based 3D multiplayer FPS that delivers quick, intense arena battles. No downloads or installations required - just jump in and start shooting!</div>
-                    <div class="info-content">
-                        <h2>WHAT IS FPS Simulator?</h2>
-                        <p>FPS Simulator is a first-person shooter training simulator. Players practice their shooting skills in various training scenarios. The game features realistic weapon mechanics, target practice, and skill progression systems.</p>
-                    </div>
+                    <h2>WHAT IS FPS SIMULATOR?</h2>
+                    <p>Experience exciting gameplay with FPS Simulator. Play free online games on popcorngame.online with no download required.</p>
                     <div class="tags">
-                        <span class="tag"><i class="fas fa-bullseye"></i> popcorn game</span>
-                        <span class="tag"><i class="fas fa-gamepad"></i> FPS</span>
-                        <span class="tag"><i class="fas fa-crosshairs"></i> SHOOTER</span>
-                        <span class="tag"><i class="fas fa-globe"></i> BROWSER GAME</span>
+                        <span class="tag"><i class="fas fa-gamepad"></i> ACTION</span>
+                        <span class="tag"><i class="fas fa-bullseye"></i> SHOOTER</span>
+                        <span class="tag"><i class="fas fa-users"></i> MULTIPLAYER</span>
+                        <span class="tag"><i class="fas fa-crosshairs"></i> BATTLE ROYALE</span>
+                        <span class="tag"><i class="fas fa-bolt"></i> SNIPER</span>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+
+        <aside class="right-sidebar">
+            <div class="ad-container vertical" style="margin-bottom: 16px;"></div>
+            <div class="ad-container square"></div>
+        </aside>
     </div>
+
     <footer class="footer">
         <div class="footer-links">
-            <a href="../index.html">About popcorn game.io</a>
+            <a href="../index.html">About popcorngame.online</a>
             <a href="../contact.html">Contact Us</a>
             <a href="../contact.html">DMCA</a>
             <a href="../privacy-policy.html">Privacy Policy</a>
             <a href="../terms-of-service.html">Terms of Service</a>
             <a href="../cookie-policy.html">Cookie Policy</a>
         </div>
-        <div class="footer-copyright">© 2024 popcorn game.io - Free Online Strategy Games. All rights reserved.</div>
+        <div class="footer-copyright">© 2024 popcorngame.online - Free Online Games. All rights reserved.</div>
     </footer>
+
     <script src="../js/game_data/games.js"></script>
     <script src="../js/game_data/action.js"></script>
     <script src="../js/game_data/battleRoyale.js"></script>
@@ -141,7 +197,7 @@
                 const card = document.createElement('div');
                 card.className = 'game-card';
                 const img = document.createElement('img');
-                img.src = game.imageUrl.replace('img/', '../img/');
+                img.src = game.imageUrl;
                 img.alt = game.name;
                 img.onerror = function() { this.src = '../img/icon/popcornGame.jpg'; };
                 const title = document.createElement('div');
@@ -151,7 +207,7 @@
                 card.appendChild(title);
                 card.addEventListener('click', function() {
                     if (game.link) {
-                        window.location.href = '../' + game.link;
+                        window.location.href = game.link;
                     }
                 });
                 container.appendChild(card);
@@ -167,37 +223,9 @@
             }
         }
 
-        function initParticles() {
-            const container = document.getElementById('particles');
-            if (!container) return;
-            for (let i = 0; i < 30; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 20 + 's';
-                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
-                particle.style.width = (3 + Math.random() * 4) + 'px';
-                particle.style.height = particle.style.width;
-                container.appendChild(particle);
-            }
-        }
-
-        function initCursorGlow() {
-            const glow = document.getElementById('cursorGlow');
-            if (!glow) return;
-            document.addEventListener('mousemove', (e) => {
-                glow.style.left = e.clientX - 100 + 'px';
-                glow.style.top = e.clientY - 100 + 'px';
-            });
-        }
-
         window.addEventListener('load', function() {
             loadRelatedGames();
         });
-
-        initParticles();
-        initCursorGlow();
     </script>
 </body>
 </html>
-
