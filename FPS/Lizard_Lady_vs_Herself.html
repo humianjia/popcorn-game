@@ -206,9 +206,26 @@
                 title.textContent = game.name;
                 card.appendChild(img);
                 card.appendChild(title);
-                card.addEventListener('click', function() {
+                                card.addEventListener('click', function() {
                     if (game.link) {
-                        window.location.href = game.link;
+                        const currentPath = window.location.pathname;
+                        const pathParts = currentPath.split('/').filter(p => p);
+                        pathParts.pop();
+                        const currentDir = pathParts.length > 0 ? pathParts.join('/') + '/' : '';
+
+                        if (game.link.startsWith('/')) {
+                            window.location.href = game.link;
+                        } else if (game.link.includes('/')) {
+                            let targetPath = game.link;
+                            if (currentDir && !game.link.startsWith(currentDir)) {
+                                const depth = currentDir.split('/').filter(p => p).length;
+                                const backPath = '../'.repeat(depth);
+                                targetPath = backPath + game.link;
+                            }
+                            window.location.href = targetPath;
+                        } else {
+                            window.location.href = game.link;
+                        }
                     }
                 });
                 container.appendChild(card);

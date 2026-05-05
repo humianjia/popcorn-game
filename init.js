@@ -131,7 +131,35 @@ function loadGameById(gameId) {
 
     // 跳转到游戏页面
     if (game.link) {
-        window.location.href = game.link;
+        // 获取当前页面的目录路径
+        const currentPath = window.location.pathname;
+        const pathParts = currentPath.split('/').filter(p => p);
+        // 移除最后一个文件名，得到当前目录
+        pathParts.pop();
+        const currentDir = pathParts.length > 0 ? pathParts.join('/') + '/' : '';
+
+        // 如果游戏链接已经是绝对路径（以/开头）或包含完整路径，直接跳转
+        // 否则，根据当前目录调整链接
+        if (game.link.startsWith('/')) {
+            window.location.href = game.link;
+        } else if (game.link.includes('/')) {
+            // 游戏链接包含目录信息（如 FPS/xxx.html）
+            // 检查是否需要回退目录
+            const linkParts = game.link.split('/');
+            // 计算链接相对于当前目录的路径
+            let targetPath = game.link;
+            // 如果当前在子目录中且游戏链接也包含子目录，需要回退
+            if (currentDir && !game.link.startsWith(currentDir)) {
+                // 计算相对路径：当前目录回退到根目录，再加上游戏链接
+                const depth = currentDir.split('/').filter(p => p).length;
+                const backPath = '../'.repeat(depth);
+                targetPath = backPath + game.link;
+            }
+            window.location.href = targetPath;
+        } else {
+            // 游戏链接只是文件名（在根目录）
+            window.location.href = game.link;
+        }
     }
 }
 
