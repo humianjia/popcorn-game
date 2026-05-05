@@ -197,7 +197,8 @@
                 const card = document.createElement('div');
                 card.className = 'game-card';
                 const img = document.createElement('img');
-                img.src = game.imageUrl;
+                const imgPath = game.imageUrl.startsWith('http') ? game.imageUrl : '../' + game.imageUrl;
+                img.src = imgPath;
                 img.alt = game.name;
                 img.onerror = function() { this.src = '../img/icon/popcornGame.jpg'; };
                 const title = document.createElement('div');
