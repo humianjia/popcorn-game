@@ -3,4 +3,4 @@ Allow: /
 Disallow: /js/
 Disallow: /css/
 
-Sitemap: https://popcorngame.online/sitemap.xml
+Sitemap: https://www.popcorngame.online/sitemap.xml

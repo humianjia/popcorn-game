@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://popcorngame.online/</loc>
+    <loc>https://www.popcorngame.online/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/categories.html</loc>
+    <loc>https://www.popcorngame.online/categories.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/categories.html?category=action</loc>
+    <loc>https://www.popcorngame.online/categories.html?category=action</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/categories.html?category=battle-royale</loc>
+    <loc>https://www.popcorngame.online/categories.html?category=battle-royale</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/categories.html?category=fps</loc>
+    <loc>https://www.popcorngame.online/categories.html?category=fps</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/categories.html?category=multiplayer</loc>
+    <loc>https://www.popcorngame.online/categories.html?category=multiplayer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/categories.html?category=sniper</loc>
+    <loc>https://www.popcorngame.online/categories.html?category=sniper</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/privacy-policy.html</loc>
+    <loc>https://www.popcorngame.online/privacy-policy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/terms-of-service.html</loc>
+    <loc>https://www.popcorngame.online/terms-of-service.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/contact.html</loc>
+    <loc>https://www.popcorngame.online/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://popcorngame.online/cookie-policy.html</loc>
+    <loc>https://www.popcorngame.online/cookie-policy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
