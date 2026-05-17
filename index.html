@@ -25,13 +25,12 @@
     <meta name="twitter:title" content="Popcorn Game - Free Online Popcorn Games">
     <meta name="twitter:description" content="Popcorn Game - Play the best free online popcorn games!">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
+    <div id="particles" class="ambient-particles" aria-hidden="true"></div>
+    <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
     <header class="header">
         <div class="header-logo">
             <svg viewBox="0 0 50 50" width="38" height="38">
@@ -100,6 +99,61 @@
         </aside>
 
         <div class="center-content">
+            <section class="hero-section">
+                <div class="hero-copy">
+                    <span class="hero-kicker">Popcorn Arcade Opening</span>
+                    <h1>Pop into happy games with a warm, crunchy cinema vibe.</h1>
+                    <p>Popcorn Game mixes light, cheerful browser play with the playful energy of snacks, movie lights, and that little “pop” feeling when something fun is about to begin.</p>
+                    <div class="hero-actions">
+                        <a href="#related-games-container" class="hero-button hero-button-primary">
+                            <i class="fas fa-play"></i>
+                            Start Popping
+                        </a>
+                        <a href="categories.html" class="hero-button hero-button-secondary">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            Explore More Games
+                        </a>
+                    </div>
+                    <div class="hero-meta">
+                        <span>Light background motion</span>
+                        <span>Bouncy game cards</span>
+                        <span>Warm snack-cinema mood</span>
+                    </div>
+                </div>
+                <div class="hero-stage" aria-hidden="true">
+                    <div id="hero-particles" class="hero-particles"></div>
+                    <span class="cinema-orb orb-one"></span>
+                    <span class="cinema-orb orb-two"></span>
+                    <span class="steam-line steam-one"></span>
+                    <span class="steam-line steam-two"></span>
+                    <span class="steam-line steam-three"></span>
+                    <span class="popcorn-piece piece-one"></span>
+                    <span class="popcorn-piece piece-two"></span>
+                    <span class="popcorn-piece piece-three"></span>
+                    <span class="popcorn-piece piece-four"></span>
+                    <span class="popcorn-piece piece-five"></span>
+                    <div class="hero-bucket">
+                        <span class="hero-bucket-pop hero-bucket-pop-a"></span>
+                        <span class="hero-bucket-pop hero-bucket-pop-b"></span>
+                        <span class="hero-bucket-pop hero-bucket-pop-c"></span>
+                        <div class="hero-bucket-body"></div>
+                        <span class="hero-bucket-label">Popcorn Time</span>
+                    </div>
+                    <div class="hero-featured-card">
+                        <span class="hero-featured-label">Featured Crunch</span>
+                        <strong id="hero-featured-title">Popcorn Game</strong>
+                        <span class="hero-featured-hint">Warm glow, soft bounce, and quick pick-up-and-play energy.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-marquee" aria-label="site highlights">
+                <span class="marquee-pill"><i class="fas fa-star"></i> Soft glow buttons</span>
+                <span class="marquee-pill"><i class="fas fa-cookie-bite"></i> Snacky card hover</span>
+                <span class="marquee-pill"><i class="fas fa-wand-magic-sparkles"></i> Pop-in section reveals</span>
+                <span class="marquee-pill"><i class="fas fa-film"></i> Cozy cinema atmosphere</span>
+            </section>
+
             <div class="game-section">
                 <div class="game-frame-wrapper">
                     <iframe id="game-iframe" class="game-frame" src="" allowfullscreen></iframe>
@@ -107,23 +161,7 @@
                 </div>
                 <div class="game-controls">
                     <div class="game-info-left">
-                        <svg viewBox="0 0 50 50" width="36" height="36" class="game-icon">
-                            <defs>
-                                <linearGradient id="popcornGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
-                                </linearGradient>
-                                <linearGradient id="bucketGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#c1121f;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M16 26 L18 40 L32 40 L34 26 Z" fill="url(#bucketGrad2)"/>
-                            <ellipse cx="25" cy="22" rx="12" ry="8" fill="url(#popcornGrad2)"/>
-                            <ellipse cx="20" cy="18" rx="4" ry="3" fill="url(#popcornGrad2)"/>
-                            <ellipse cx="30" cy="18" rx="4" ry="3" fill="url(#popcornGrad2)"/>
-                            <ellipse cx="25" cy="16" rx="4" ry="3" fill="url(#popcornGrad2)"/>
-                        </svg>
+                        <img src="img/icon/popcornGame.jpg" id="game-icon" class="game-icon" alt="Popcorn Game">
                         <span class="game-title" id="current-game-title">Popcorn Game</span>
                     </div>
                     <div class="game-actions">
@@ -206,6 +244,7 @@
     <script src="js/game_data/fps.js"></script>
     <script src="js/game_data/multiplayer.js"></script>
     <script src="js/game_data/sniper.js"></script>
+    <script src="js/ui-effects.js"></script>
     <script src="init.js"></script>
 </body>
 </html>

@@ -22,13 +22,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.popcorngame.online/categories">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
+    <div id="particles" class="ambient-particles" aria-hidden="true"></div>
+    <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
     <header class="header">
         <div class="header-logo">
             <svg viewBox="0 0 50 50" width="38" height="38">
@@ -134,6 +133,7 @@
     <script src="js/game_data/fps.js"></script>
     <script src="js/game_data/multiplayer.js"></script>
     <script src="js/game_data/sniper.js"></script>
+    <script src="js/ui-effects.js"></script>
     <script>
         function getURLParam(name) {
             const urlParams = new URLSearchParams(window.location.search);

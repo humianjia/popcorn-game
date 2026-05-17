@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // 粒子背景效果
 function initParticles() {
     const container = document.getElementById('particles');
-    if (!container) return;
+    if (!container || container.childElementCount > 0) return;
     
     for (let i = 0; i < 30; i++) {
         const particle = document.createElement('div');
@@ -209,7 +209,9 @@ function initParticles() {
 // 鼠标跟随光效
 function initCursorGlow() {
     const glow = document.getElementById('cursorGlow');
-    if (!glow) return;
+    if (!glow || glow.dataset.bound === 'true') return;
+
+    glow.dataset.bound = 'true';
     
     document.addEventListener('mousemove', (e) => {
         glow.style.left = e.clientX + 'px';
